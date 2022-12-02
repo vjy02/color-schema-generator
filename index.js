@@ -2,7 +2,6 @@ const selectedColor= document.getElementById('seed-color')
 const colorBtn = document.getElementById('color-button')
 const modes = document.getElementById('modes')
 const colorPallet = document.getElementById('pallets')
-const container = document.getElementById('container')
 
 const count = 6
 
