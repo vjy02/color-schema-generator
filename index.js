@@ -6,6 +6,8 @@ const container = document.getElementById('container')
 
 const count = 6
 
+generateColors()
+
 function changeBorderColor() {
   var myContainer = container
   var color ='rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) +  ',0.1)'
@@ -38,22 +40,10 @@ function clear(){
     colorPallet.innerHTML =''
 }
 
-generateColors()
-
-var inCooldown = false
-
-function unlock(){
-  isCooldown = false
-}
-
 colorBtn.addEventListener('click' , (e)=> {
-    if (!inCooldown){
-      isCooldown = true
-      clear()
-      generateColors()
-      e.preventDefault()
-      setTimeout(unlock, 3000)
-    }   
+    clear()
+    setTimeout(generateColors(), 1500)
+    e.preventDefault()
 })
 
 
