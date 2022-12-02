@@ -52,7 +52,7 @@ colorBtn.addEventListener('click' , (e)=> {
       clear()
       generateColors()
       e.preventDefault()
-      setTimeout(unlock, 1500)
+      setTimeout(unlock, 3000)
     }   
 })
 
