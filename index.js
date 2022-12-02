@@ -7,10 +7,11 @@ const container = document.getElementById('container')
 const count = 6
 
 function changeBorderColor() {
-  var myContainer = container;
-  var color ='rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) +  ',0.1)';
-  myContainer.style.borderColor = color;
+  var myContainer = container
+  var color ='rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) +  ',0.1)'
+  myContainer.style.borderColor = color
 }
+setInterval(changeBorderColor, 500)
 
 function generateColors(){
 
