@@ -42,7 +42,7 @@ generateColors()
 
 colorBtn.addEventListener('click' , (e)=> {
     clear()
-    generateColors()
+    setTimeout(generateColors(), 500)
     e.preventDefault()
 })
 
