@@ -40,10 +40,20 @@ function clear(){
 
 generateColors()
 
+var inCooldown = false
+
+function unlock(){
+  isCooldown = false
+}
+
 colorBtn.addEventListener('click' , (e)=> {
-    clear()
-    setTimeout(generateColors(), 500)
-    e.preventDefault()
+    if (!inCooldown){
+      isCooldown = true
+      clear()
+      generateColors()
+      e.preventDefault()
+      setTimeout(unlock, 1500)
+    }   
 })
 
 
