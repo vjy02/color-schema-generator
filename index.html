@@ -1,0 +1,48 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    
+    <body>
+        <div class = "title">
+            <h1>Color Scheme Generator</h1>
+            <p>Beautiful Color Schemes in a few clicks!</p>
+        </div>
+            
+        <main id="container" class="container">
+            <div>
+                <header>
+                    <form>
+                        <div class="input-field">
+                            <label for="seed-color">Color</label>
+                            <input type="color" value="#FCAA1D" id="seed-color"/>
+                        </div>
+                    <div class="input-field">
+                        <label for="modes"> Select a Mode</label>
+                        <select id="modes">
+                            <option value="monochrome">Monochrome </option>
+                            <option value="monochrome-dark">Monochrome Dark</option>
+                            <option value="monochrome-light">Monochrome Light</option>
+                            <option value="analogic">Analogic</option>
+                            <option value="complement">Complement</option>
+                            <option value="analogic-complement">Analogic Complement</option>
+                            <option value="triad">Triad</option>
+                            <option value="quad">Quad</option>
+                        </select>
+                    </div>                  
+                        <button id="color-button">Generate</button>
+                    </form>
+                </header>
+            </div>
+            
+            <div id="pallets" class="color flex">
+             
+            </div>  
+        </main>
+        
+        <script src="index.js"></script>   
+    </body>
+</html>

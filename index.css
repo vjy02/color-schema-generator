@@ -1,0 +1,88 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: whitesmoke;
+}
+
+h1, p {
+    text-align: center;
+    margin-bottom: 0.2rem;
+}
+form{
+    display: flex;
+    margin: 0 auto;
+    padding: 1em;
+    justify-content: center;
+    gap: 1em;
+    align-items: baseline;
+}
+
+select{
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: black;
+    border: 1px solid black;
+    border-radius: 0.3rem;
+    padding: .3rem 0 .3rem .4rem;
+}
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    letter-spacing: 2px;
+    max-width: 45%;
+    gap:.5em;
+    color: black;
+    font-weight: 100;
+    
+}
+.container{
+    width: 65%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    background-color: white;
+    border-radius: 10px;
+    border: 8px solid whitesmoke;
+    box-shadow: 0 0 8px black; 
+    margin-top: 2rem;
+}
+
+#color-button{
+    background: white;
+    border-radius: 0.5rem;
+    padding: 1rem 0.3rem;
+    align-self: flex-end;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+#seed-color{
+    padding: 0;
+    background: white;
+    border: none;
+}
+
+.new-color{
+    width: 20%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.color-hex{
+    background: white;
+    width: 100%;
+    font-weight: 700;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    padding-bottom: 0.5rem;
+    border: 1px solid grey;
+}
+.flex{
+    display: flex;
+    height: 50vh;
+}
+
